@@ -1,0 +1,14 @@
+   Usuario                  Sistema de Biblioteca              Base de Datos de Libros
+      |                               |                                 |
+      |---------> Solicita reserva --->|                                 |
+      |                               |                                 |
+      |                               |--- Verificar disponibilidad --->|
+      |                               |                                 |
+      |                               |<--- Libro disponible? -----------|
+      |                               |                                 |
+      | <--- Reserva confirmada ------|                                 |
+      |                               |                                 |
+      |                               |--- Actualizar disponibilidad --->|
+      |                               |                                 |
+      | <--- Confirmación reserva --->|                                 |
+      |                               |                                 |

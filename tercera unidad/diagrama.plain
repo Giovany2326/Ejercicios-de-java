@@ -1,0 +1,48 @@
++-----------------+
+|      Libro      |
++-----------------+
+| - titulo: String|
+| - autor: String |
+| - isbn: String  |
+| - disponible: boolean |
++-----------------+
+| + prestamo()    |
+| + devolucion()  |
+| + esDisponible(): boolean |
++-----------------+
+
++-----------------+
+|     Usuario     |
++-----------------+
+| - nombre: String|
+| - idUsuario: String |
+| - telefono: String |
++-----------------+
+| + registrar()   |
+| + solicitarPrestamo(libro: Libro) |
+| + devolverLibro(libro: Libro) |
++-----------------+
+
++-----------------+
+|   Bibliotecario |
++-----------------+
+| - nombre: String|
+| - idBibliotecario: String |
++-----------------+
+| + agregarLibro(libro: Libro) |
+| + eliminarLibro(libro: Libro) |
+| + buscarLibro(isbn: String): Libro |
++-----------------+
+
++-----------------+
+|    Biblioteca    |
++-----------------+
+| - nombre: String|
+| - direccion: String |
+| - libros: List<Libro> |
+| - usuarios: List<Usuario> |
++-----------------+
+| + agregarUsuario(usuario: Usuario) |
+| + listarLibros(): List<Libro> |
+| + buscarUsuario(idUsuario: String): Usuario |
++-----------------+
